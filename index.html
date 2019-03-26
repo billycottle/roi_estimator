@@ -4,15 +4,63 @@
     <head>
         <meta charset="UTF-8">
         <title> ROI Calculator </title>
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
     </head>
     <body>
-        <h1> Hola Pendejos </h1>
+        <div class="container">
+            <div class="jumbotron">
+                <h2 class="text-center"> ROI & Contact Estimator </h2>
+            </div>
+            <div class="row">
+                <div class="B col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+                    <p class="Lead">I have a revenue ($) target and would like to estimate how many contacts I should reach with my marketing activities.</p>
+                    <a onclick="contacts()" href="#" class="btn btn-default btn-lg">Contacts Estimator</a>
+                </div>
+                <div class="A col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+                    <p class="Lead">I will invest in a new contact list or in ads and would like to estimate the return over my investment (ROI).</p>
+                    <a onclick="roi()" href="#" class="btn btn-default btn-lg">ROI Calculator</a>
+                </div>
+            </div>
+    <div id="contacts" class="hidden">
+    <div class="uCalc_185337"></div>
+<script> 
+var widgetOptions185337 = { bg_color: "transparent" }; 
+(function() { var a = document.createElement("script"), h = "head"; 
+a.async = true; 
+a.src = (document.location.protocol == "https:" ? "https:" : "http:") + "//ucalc.pro/api/widget.js?id=185337&t="+Math.floor(new Date()/18e5); 
+document.getElementsByTagName(h)[0].appendChild(a) })();
+</script
+    </div>
+
+        </div> 
+        <div class="hidden" id="roi">
+    <h3 class="text-center">Comming soon..</h3>
+    </div>
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!--button toggle-->
+        <script>
+            function contacts(){
+                x=document.getElementById("contacts");
+                y=document.getElementById("roi");
+                x.className="visible";
+                y.className="hidden";
+                }
+             function roi(){
+                x=document.getElementById("roi");
+                y=document.getElementById("contacts");
+                x.className="visible";
+                y.className="hidden";
+                }
+        </script>
+            
    
     </body>
 
