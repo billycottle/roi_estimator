@@ -1,0 +1,21 @@
+
+.hidden{
+display:hidden;
+}
+.visible{
+display:block;
+}
+#contacts{
+margin-top:55px;
+}
+.Lead{
+padding-left:30px;
+padding-right:30px;
+}
+.jumbotron{
+  background: linear-gradient(to right,#55b854,#96c93f) !important;
+}
+h2{
+font-family: 'Share Tech Mono', monospace;
+color:white;
+}
